@@ -1,0 +1,136 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: name, datatype: string}
+# - {name: group, datatype: string}
+# - {name: kind, datatype: string}
+# - {name: temperature.val, datatype: float64}
+# - {name: temperature.min, datatype: float64}
+# - {name: temperature.max, datatype: float64}
+# - {name: temperature.frozen, datatype: bool}
+# - {name: tau.val, datatype: float64}
+# - {name: tau.min, datatype: float64}
+# - {name: tau.max, datatype: float64}
+# - {name: tau.frozen, datatype: bool}
+# - {name: wavelength.val, datatype: float64}
+# - {name: wavelength.min, datatype: float64}
+# - {name: wavelength.max, datatype: float64}
+# - {name: wavelength.frozen, datatype: bool}
+# - {name: power.val, datatype: float64}
+# - {name: power.min, datatype: float64}
+# - {name: power.max, datatype: float64}
+# - {name: power.frozen, datatype: bool}
+# - {name: fwhm.val, datatype: float64}
+# - {name: fwhm.min, datatype: float64}
+# - {name: fwhm.max, datatype: float64}
+# - {name: fwhm.frozen, datatype: bool}
+# - {name: model, datatype: string}
+# - {name: geometry, datatype: string}
+# meta: !!omap
+# - user_unit:
+#     flux: !astropy.units.Unit {unit: MJy / sr}
+# - {redshift: jwst.miri.mrs.*}
+# - {instrument: 0.0008109999999998951}
+# - {fitter_message: "Both actual and predicted relative reductions in the sum of squares\n  are at most 0.000000"}
+# - __serialized_columns__:
+#     fwhm:
+#       __class__: astropy.table.column.MaskedColumn
+#       data: !astropy.table.SerializedColumn
+#         frozen: !astropy.table.SerializedColumn {name: fwhm.frozen}
+#         max: !astropy.table.SerializedColumn {name: fwhm.max}
+#         min: !astropy.table.SerializedColumn {name: fwhm.min}
+#         val: !astropy.table.SerializedColumn {name: fwhm.val}
+#       unit: &id001 !astropy.units.Unit {unit: um}
+#     power:
+#       __class__: astropy.table.column.MaskedColumn
+#       data: !astropy.table.SerializedColumn
+#         frozen: !astropy.table.SerializedColumn {name: power.frozen}
+#         max: !astropy.table.SerializedColumn {name: power.max}
+#         min: !astropy.table.SerializedColumn {name: power.min}
+#         val: !astropy.table.SerializedColumn {name: power.val}
+#       unit: !astropy.units.Unit {unit: 1e-10 W / (sr m2)}
+#     tau:
+#       __class__: astropy.table.column.MaskedColumn
+#       data: !astropy.table.SerializedColumn
+#         frozen: !astropy.table.SerializedColumn {name: tau.frozen}
+#         max: !astropy.table.SerializedColumn {name: tau.max}
+#         min: !astropy.table.SerializedColumn {name: tau.min}
+#         val: !astropy.table.SerializedColumn {name: tau.val}
+#     temperature:
+#       __class__: astropy.table.column.MaskedColumn
+#       data: !astropy.table.SerializedColumn
+#         frozen: !astropy.table.SerializedColumn {name: temperature.frozen}
+#         max: !astropy.table.SerializedColumn {name: temperature.max}
+#         min: !astropy.table.SerializedColumn {name: temperature.min}
+#         val: !astropy.table.SerializedColumn {name: temperature.val}
+#       unit: !astropy.units.Unit {unit: K}
+#     wavelength:
+#       __class__: astropy.table.column.MaskedColumn
+#       data: !astropy.table.SerializedColumn
+#         frozen: !astropy.table.SerializedColumn {name: wavelength.frozen}
+#         max: !astropy.table.SerializedColumn {name: wavelength.max}
+#         min: !astropy.table.SerializedColumn {name: wavelength.min}
+#         val: !astropy.table.SerializedColumn {name: wavelength.val}
+#       unit: *id001
+# schema: astropy-2.0
+name group kind temperature.val temperature.min temperature.max temperature.frozen tau.val tau.min tau.max tau.frozen wavelength.val wavelength.min wavelength.max wavelength.frozen power.val power.min power.max power.frozen fwhm.val fwhm.min fwhm.max fwhm.frozen model geometry
+starlight _none_ starlight 5000.0 nan nan False 5.225779647218572e-08 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont00 dust_cont dust_continuum 300.0 nan nan False 0.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont01 dust_cont dust_continuum 200.0 nan nan False 0.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont02 dust_cont dust_continuum 135.0 nan nan False 0.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont03 dust_cont dust_continuum 90.0 nan nan False 29503.921949492582 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont04 dust_cont dust_continuum 65.0 nan nan False 0.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont05 dust_cont dust_continuum 50.0 nan nan False 0.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont06 dust_cont dust_continuum 40.0 nan nan False 1.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+dust_cont07 dust_cont dust_continuum 35.0 nan nan False 1.0 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+H2_S(8) H2_lines line "" "" "" "" "" "" "" "" 5.0531 nan nan False 1.968503607028243 0.0 inf False 0.0014487799590574763 nan nan False "" ""
+H2_S(7) H2_lines line "" "" "" "" "" "" "" "" 5.5112 nan nan False 1.9789425371392024 0.0 inf False 0.0014564628064166394 nan nan False "" ""
+H2_S(6) H2_lines line "" "" "" "" "" "" "" "" 6.1086 nan nan False 2.3080140413864085 0.0 inf False 0.0016973928390365996 nan nan False "" ""
+H2_S(5) H2_lines line "" "" "" "" "" "" "" "" 6.9095 nan nan False 2.6771803263011646 0.0 inf False 0.001970352093681703 nan nan False "" ""
+H2_S(4) H2_lines line "" "" "" "" "" "" "" "" 8.0258 nan nan False 3.1375387977056994 0.0 inf False 0.0023091668791725456 nan nan False "" ""
+H2_S(3) H2_lines line "" "" "" "" "" "" "" "" 9.6649 nan nan False 3.8968211514640965 0.0 inf False 0.0028679837660015328 nan nan False "" ""
+H2_S(2) H2_lines line "" "" "" "" "" "" "" "" 12.2786 nan nan False 5.599006906183911 0.0 inf False 0.004120759020883659 nan nan False "" ""
+H2_S(1) H2_lines line "" "" "" "" "" "" "" "" 17.0348 nan nan False 9.0779005144872 0.0 inf False 0.006681156330498872 nan nan False "" ""
+[ArII] ionic_lines line "" "" "" "" "" "" "" "" 6.985274 nan nan False 2.681183423441102 0.0 inf False 0.0019732982944861083 nan nan False "" ""
+[ArIII] ionic_lines line "" "" "" "" "" "" "" "" 8.99138 nan nan False 3.8620336535656707 0.0 inf False 0.0028423808513809807 nan nan False "" ""
+[SIV] ionic_lines line "" "" "" "" "" "" "" "" 10.5105 nan nan False 4.565492940764427 0.0 inf False 0.00336011305855991 nan nan False "" ""
+[NeII] ionic_lines line "" "" "" "" "" "" "" "" 12.8135 nan nan False 5.845209164642469 0.0 inf False 0.004301959043406316 nan nan False "" ""
+[NeIII] ionic_lines line "" "" "" "" "" "" "" "" 15.555 nan nan False 10.149353363344051 0.0 inf False 0.007469724565251705 nan nan False "" ""
+[FeII]_5.34 ionic_lines line "" "" "" "" "" "" "" "" 5.3402 nan nan False 1.9830877374394342 0.0 inf False 0.001459513592353639 nan nan False "" ""
+[NiII]_6.64 ionic_lines line "" "" "" "" "" "" "" "" 6.636 nan nan False 2.6487818394049887 0.0 inf False 0.0019494513655672913 nan nan False "" ""
+HI_Pfα ionic_lines line "" "" "" "" "" "" "" "" 7.4599 nan nan False 2.671498571910837 0.0 inf False 0.001966170434139092 nan nan False "" ""
+HI_Huα ionic_lines line "" "" "" "" "" "" "" "" 12.3719 nan nan False 5.606429340061574 0.0 inf False 0.00412622178631167 nan nan False "" ""
+[ClII]_14.4 ionic_lines line "" "" "" "" "" "" "" "" 14.3678 nan nan False 8.264900702516925 0.0 inf False 0.006082804450372939 nan nan False "" ""
+[FeII]_17.9 ionic_lines line "" "" "" "" "" "" "" "" 17.936 nan nan False 11.491444930571614 0.0 inf False 0.00845747757666462 nan nan False "" ""
+[PIII]_17.9 ionic_lines line "" "" "" "" "" "" "" "" 17.8846 nan nan False 11.520093940284744 0.0 inf False 0.008478562684647676 nan nan False "" ""
+[NeV]_14 ionic_lines line "" "" "" "" "" "" "" "" 14.322 nan nan False 8.24914490730303 0.0 inf False 0.006071208494813901 nan nan False "" ""
+[H6_g]_5.90 ionic_lines line "" "" "" "" "" "" "" "" 5.9082 nan nan False 2.291649744787265 0.0 inf False 0.0016857003459523903 nan nan False "" ""
+[HeI]_6.72 ionic_lines line "" "" "" "" "" "" "" "" 6.7217 nan nan False 2.6600807372095225 0.0 inf False 0.001957767132244173 nan nan False "" ""
+[NiIII]_7.34 ionic_lines line "" "" "" "" "" "" "" "" 7.3524 nan nan False 2.6786126620644666 0.0 inf False 0.001971406264647458 nan nan False "" ""
+[H6b]_7.50 ionic_lines line "" "" "" "" "" "" "" "" 7.5025 nan nan False 2.6679510067307497 0.0 inf False 0.00196355949590255 nan nan False "" ""
+[H6_d]_5.12 ionic_lines line "" "" "" "" "" "" "" "" 5.1287 nan nan False 1.9751269291880786 0.0 inf False 0.0014536545939696458 nan nan False "" ""
+[H7g]_8.76 ionic_lines line "" "" "" "" "" "" "" "" 8.7601 nan nan False 3.8594626582534364 0.0 inf False 0.002840488649370328 nan nan False "" ""
+PAH_5.3 _none_ dust_feature "" "" "" "" "" "" "" "" 5.27 nan nan False 242015.7759028311 0.0 inf False 0.17918 nan nan False "" ""
+PAH_5.7 _none_ dust_feature "" "" "" "" "" "" "" "" 5.7 nan nan False 47997804.69982731 0.0 inf False 0.1995 nan nan False "" ""
+PAH_6.2 _none_ dust_feature "" "" "" "" "" "" "" "" 6.22 nan nan False 189967492.52419627 0.0 inf False 0.1866 nan nan False "" ""
+PAH_6.7 _none_ dust_feature "" "" "" "" "" "" "" "" 6.69 nan nan False 632525.883777742 0.0 inf False 0.4683 nan nan False "" ""
+PAH_7.7a PAH_7.7_cmp dust_feature "" "" "" "" "" "" "" "" 7.42 nan nan False 1262782.616402918 0.0 inf False 0.93492 nan nan False "" ""
+PAH_7.7b PAH_7.7_cmp dust_feature "" "" "" "" "" "" "" "" 7.6 nan nan False 451669.1341774011 0.0 inf False 0.3344 nan nan False "" ""
+PAH_7.7c PAH_7.7_cmp dust_feature "" "" "" "" "" "" "" "" 7.85 nan nan False 561952.581562523 0.0 inf False 0.41605 nan nan False "" ""
+PAH_8.3 _none_ dust_feature "" "" "" "" "" "" "" "" 8.33 nan nan False 562560.3899069603 0.0 inf False 0.4165 nan nan False "" ""
+PAH_8.6 _none_ dust_feature "" "" "" "" "" "" "" "" 8.61 nan nan False 453546.58661910734 0.0 inf False 0.33579 nan nan False "" ""
+PAH_10.7 _none_ dust_feature "" "" "" "" "" "" "" "" 10.68 nan nan False 288506.3608262347 0.0 inf False 0.2136 nan nan False "" ""
+PAH_11.3a PAH_11.3_cmp dust_feature "" "" "" "" "" "" "" "" 11.23 nan nan False 182018.33888082107 0.0 inf False 0.13476 nan nan False "" ""
+PAH_11.3b PAH_11.3_cmp dust_feature "" "" "" "" "" "" "" "" 11.33 nan nan False 489704.42968707695 0.0 inf False 0.36256 nan nan False "" ""
+PAH_12 _none_ dust_feature "" "" "" "" "" "" "" "" 11.99 nan nan False 728762.2049803132 0.0 inf False 0.53955 nan nan False "" ""
+PAH_12.6a PAH_12.6_cmp dust_feature "" "" "" "" "" "" "" "" 12.62 nan nan False 715917.1886345384 0.0 inf False 0.53004 nan nan False "" ""
+PAH_12.6b PAH_12.6_cmp dust_feature "" "" "" "" "" "" "" "" 12.69 nan nan False 222822.53907071127 0.0 inf False 0.16497 nan nan False "" ""
+PAH_13.48 _none_ dust_feature "" "" "" "" "" "" "" "" 13.48 nan nan False 728289.465156862 0.0 inf False 0.5392 nan nan False "" ""
+PAH_14.04 _none_ dust_feature "" "" "" "" "" "" "" "" 14.04 nan nan False 303417.9255430962 0.0 inf False 0.22464 nan nan False "" ""
+PAH_14.19 _none_ dust_feature "" "" "" "" "" "" "" "" 14.19 nan nan False 479155.5781980653 0.0 inf False 0.35475 nan nan False "" ""
+PAH_15.9 _none_ dust_feature "" "" "" "" "" "" "" "" 15.9 nan nan False 429517.8967356864 0.0 inf False 0.318 nan nan False "" ""
+PAH_17a PAH_17_cmp dust_feature "" "" "" "" "" "" "" "" 16.45 nan nan False 311062.8038309075 0.0 inf False 0.2303 nan nan False "" ""
+PAH_17b PAH_17_cmp dust_feature "" "" "" "" "" "" "" "" 17.04 nan nan False 1496018.938441655 0.0 inf False 1.1076 nan nan False "" ""
+PAH_17c PAH_17_cmp dust_feature "" "" "" "" "" "" "" "" 17.37 nan nan False 281617.86625594535 0.0 inf False 0.2085 nan nan False "" ""
+PAH_17d PAH_17_cmp dust_feature "" "" "" "" "" "" "" "" 17.87 nan nan False 386187.9152033568 0.0 inf False 0.28592 nan nan False "" ""
+silicate _none_ attenuation "" "" "" "" 558.9890431128971 0.0 inf False "" "" "" "" "" "" "" "" "" "" "" "" Fritz_attenuation mixed
